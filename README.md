@@ -2,7 +2,7 @@
 
 O que é um container:
 
--   A origem do nome container, para software, detém o mesmo significado de containers físicos. Ambos, inclusive, tem a mesma finalidade de' compartimentação, transporte e armazenamento.
+-   A origem do nome container, para software, detém o mesmo significado de containers físicos. Ambos, inclusive, tem a mesma finalidade de compartimentação, transporte e armazenamento.
   
 -   A compartimentação, possibilita que conteiners carreguem qualquer tipo de produto em um único ambiente, sendo práticos, principalmente quando se pretende abri-los e fecha-los em qualquer lugar, independente do tipo de transporte utilizado ou o que se quer armazenar.
 
