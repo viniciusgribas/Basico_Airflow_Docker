@@ -1,6 +1,8 @@
-### Introdução
+# Introdução
 
-O que é um container:
+## Conceitos básicos para o Docker
+
+### O que é um container:
 
 -   A origem do nome container, para software, detém o mesmo significado de containers físicos. Ambos, inclusive, tem a mesma finalidade de compartimentação, transporte e armazenamento.
   
@@ -14,7 +16,7 @@ O que é um container:
 
 -  Portanto, o container é uma unidade padrão para software. Assim como o metro é uma unidade padrão para medir distância.
 
-Vantagens de se usar um container:
+### Vantagens de se usar um container:
 
 - Ao contrário de máquinas virtuais, os containers são unidades específicas para rodar ambientes de códigos e todas as suas dependências.
 
@@ -30,13 +32,13 @@ Vantagens de se usar um container:
 
 - A vantagem consiste no fato de que apenas a leitura do arquivo imagem, já possibilita a execução de um arquivo container. Possibilitando a reprodução exata do ambiente armazenado no container.
 
-O que é o software Docker:
+### O que é o software Docker:
 
 - O docker é por essência uma ferramenta de linha de comando, ou seja, uma ferramenta de CLI (Command Line Tool) que executa comandos específicos para tratar containers. Ele em si não é um container e sim uma ferramenta que permite a operacionalização de containers (principalmente Construir, Rodar e Compartilhar).
 
 - Logo o docker é um dos softwares para se trabalhar com containers. Sendo por muitos, considerado o mais popular.
 
-Fluxo padrão:
+### Fluxo padrão:
 
 1) Os arquivos do ambiente são armazenados em um "container file" via Docker-CLI (comando: BUILD), gerando um "Dockerfile";
 2) Via Docker-CLI (comando: BUILD) o docker constroi uma imagem container a partir do "dockerfile";
