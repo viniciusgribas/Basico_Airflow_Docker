@@ -45,3 +45,15 @@
 3) Docker-CLI (comando: RUN) o docker utiliza de sua "Container Execution Engine" para executar a imagem de container;
 4) Após a execução do container, é possível armazená-lo em núvem em um "Container Registry" via Docker-CLI(comando: PUSH); e
 5) De forma análoga, é possível "puxar" os containers armazenados em um "Container Registry" via Docker-CLI(comando: PULL).
+
+---
+
+Fluxo de trabalho com o docker
+1) Crie um projeto de análise exploratória
+2) Crie o arquivo requiriments.txt pela biblitoeca pipreqs
+   1) Melhor prática é criar uma pasta apenas com o código principal
+3) Crie um dockerfile para python, com as informações necessárias para aplicar o airflow
+4) Auxilie a ambientação do airflow
+   1) Crie um entrypoint.sh
+   2) Crie um airflow_settings.yaml
+   3) Crie um airflow.cfg
