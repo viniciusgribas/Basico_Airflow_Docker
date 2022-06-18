@@ -60,7 +60,7 @@ Fluxo de trabalho com o docker
    1) Para este projeto, foi utilizado um projeto previamente realizado por mim, onde é feita uma raspagem de dados no site da CNN. O projeto está no repositório [Energy News Scrapping](https://github.com/viniciusgribas/EnergyNewsScrapping).
    2) Para a criação do dockerfile deste projeto, foi gerado um arquivo "requiriments.txt", contendo as informações referentes às bibliotecas de desenvolvimento do projeto [WebScrape_CNN_NEWS.py](https://github.com/viniciusgribas/Basico_Airflow_Docker/blob/main/CNN%20News/py/CNN_WordCloud.py)
    3) A criação do arquivo "requiriments.txt" foi pela biblioteca pireqs. A melhor prática para esta biblioteca, é isolar o projeto python em uma única pasta, onde contém o código e posteriormente será gerado o "requiriments.txt"
-  `` $\Basico_Airflow_Docker\CNN News\py> pipreqs``
+ > `` $\Basico_Airflow_Docker\CNN News\py> pipreqs``
 
 
 2) Crie o arquivo requiriments.txt pela biblitoeca pipreqs
