@@ -85,6 +85,6 @@ Fluxo de trabalho com o docker
    4) como já explicado, deve-se ter a pasta 'dags'.
    5) o comando abaixo executa o airflow web localmente via docker:
    > `docker run -p 8080:8080 -it -v ${PWD}/dags/:/root/airflow/dags --name nome_da_instancia_aiflow nome_da_imagem_airflow bash`
-   1) conforme o comando acima, o airflow será executado na porta [8080](http://localhost:8080).
+   - conforme o comando acima, o airflow será executado na porta [8080](http://localhost:8080).
 
      
