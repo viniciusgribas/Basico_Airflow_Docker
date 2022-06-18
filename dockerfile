@@ -72,7 +72,7 @@ RUN pip install pyarrow==0.14.1
 # requiriments.txt
 RUN pip install beautifulsoup4==4.11.1
 RUN pip install matplotlib==3.4.3
-RUN pip install newspaper==0.1.0.7
+#  
 RUN pip install newspaper3k==0.2.8
 RUN pip install nltk==3.6.5
 RUN pip install pandas==1.3.4
