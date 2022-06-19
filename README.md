@@ -58,33 +58,33 @@
 Fluxo de trabalho com o docker
 1) Crie um projeto de análise exploratória:
    1) Para este projeto, foi utilizado um projeto previamente realizado por mim, onde é feita uma raspagem de dados no site da CNN. O projeto está no repositório [Energy News Scrapping](https://github.com/viniciusgribas/EnergyNewsScrapping).
-   2) Para a criação do dockerfile deste projeto, foi gerado um arquivo "requiriments.txt", contendo as informações referentes às bibliotecas de desenvolvimento do projeto [WebScrape_CNN_NEWS.py](https://github.com/viniciusgribas/Basico_Airflow_Docker/blob/main/CNN%20News/py/CNN_WordCloud.py)
+   2) Para a criação do dockerfile deste projeto, foi gerado um arquivo "requiriments.txt", contendo as informações referentes às bibliotecas de desenvolvimento do projeto [WebScrape_CNN_NEWS.py](https://github.com/viniciusgribas/Basico_Airflow_Docker/blob/main/CNN%20News/py/CNN_WordCloud.py).
    
-2) Crie o arquivo 'requiriments.txt' contendo informações das bibliotecas python do projeto
+2) Crie o arquivo 'requiriments.txt' contendo informações das bibliotecas python do projeto:
    1) A criação do arquivo "requiriments.txt" foi feita pela biblioteca pireqs. A melhor prática para esta biblioteca, é isolar o projeto python em uma única pasta, onde contém o código e posteriormente será gerado o "requiriments.txt".
  > `` $YOUR_PROJECT_PATCH> pipreqs``
 
-3) Crie um dockerfile para python, com as informações necessárias para aplicar o airflow
-   1) Sobreponha as bibliotecas que estão importadas no arquivo dockerfile padrão e cole as do 'requiriments.txt'
+3) Crie um dockerfile para python, com as informações necessárias para aplicar o airflow:
+   1) Sobreponha as bibliotecas que estão importadas no arquivo dockerfile padrão e cole as do 'requiriments.txt'.
 
    
-4) Auxilie a ambientação do airflow
-   1) Crie um entrypoint.sh com as configurações padrões
-   2) Crie um airflow_settings.yaml com as configurações padrões
-   3) Crie um airflow.cfg com as configurações padrões
-   4) Crie uma pasta com de nome 'dags'
+4) Auxilie a ambientação do airflow:
+   1) Crie um entrypoint.sh com as configurações padrões.
+   2) Crie um airflow_settings.yaml com as configurações padrões.
+   3) Crie um airflow.cfg com as configurações padrões.
+   4) Crie uma pasta com de nome 'dags'.
    
-5) Entre na pasta onde está o dockerfile via 'Windows Power Shell', faça a construção e dê nome à imagem do docker com base no dockerfile e arquivos criados
-   1) Para isso, utilize o comando abaixo. Formalizando a criação da imagem do docker, executável pelo airflow, de nome 'nome_da_imagem_airflow:
+5) Entre na pasta onde está o dockerfile via 'Windows Power Shell', faça a construção e dê nome à imagem do docker com base no dockerfile e arquivos criados:
+   1) Para isso, utilize o comando abaixo, formalizando a criação da imagem do docker, executável pelo airflow, de nome 'nome_da_imagem_airflow.
    > `  docker build -t nome_da_imagem_airflow .`
 
-6) Rode a imagem 'nome_da_imagem_airflow ' no airflow
+6) Rode a imagem 'nome_da_imagem_airflow ' no airflow:
    1) Para esta etapa, a imagem já foi criada pelo docker e já está em execução.
-   2) agora, devemos criar e nomear uma instância da imagem para o airflow, aqui vou utilizar o nome 'nome_da_instancia_aiflow'
-   3) por padrão, esta instância airflow será criada na porta 8080
-   4) como já explicado, deve-se ter a pasta 'dags'
+   2) agora, devemos criar e nomear uma instância da imagem para o airflow, aqui vou utilizar o nome 'nome_da_instancia_aiflow'.
+   3) por padrão, esta instância airflow será criada na porta 8080.
+   4) como já explicado, deve-se ter a pasta 'dags'.
    5) o comando abaixo executa o airflow web localmente via docker:
    > `docker run -p 8080:8080 -it -v ${PWD}/dags/:/root/airflow/dags --name nome_da_instancia_aiflow nome_da_imagem_airflow bash`
-   1) conforme o comando acima, o airflow será executado na porta [8080](http://localhost:8080)
+   - conforme o comando acima, o airflow será executado na porta [8080](http://localhost:8080).
 
      
